@@ -1,0 +1,13 @@
+
+laplacianSchemes {
+    default         Gauss linear corrected;
+}
+
+ddtSchemes {
+    default         backward;
+}
+
+fluxRequired {
+    default         no;
+    T;
+}
