@@ -1,0 +1,27 @@
+FoamFile
+{
+	version         1.4;
+	format          ascii;
+
+	root            "";
+	case            "";
+	instance        "constant";
+	local           "";
+
+	class           dictionary;
+	object          gmtDict;
+}
+
+projection "X20c/8c";
+projection2D XZ;
+plotBoundaryDots false;
+
+FieldsToPlot
+(
+    [Tf rawValues -0.1 1.0 0.1 "$GMTU/colours/white_blue_red.cpt"]
+//    [thetaf_diff contours -0.005 -0.5e-3 0.5e-3 "black,3_3:0"]
+//    [thetaf_diff contours 0.5e-3 0.005 0.5e-3 "black"]
+);
+
+region "-75e3/75e3/0e3/20e3";
+boundaryMarks "5e3/2e3WSen";
