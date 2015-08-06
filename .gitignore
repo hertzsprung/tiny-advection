@@ -3,9 +3,9 @@ gmt.history
 PyFoamHistory
 *.ps
 *.pdf
-constant/polyMesh/boundary
-constant/polyMesh/faces
-constant/polyMesh/neighbour
-constant/polyMesh/owner
-constant/polyMesh/points
+**/constant/polyMesh/boundary
+**/constant/polyMesh/faces
+**/constant/polyMesh/neighbour
+**/constant/polyMesh/owner
+**/constant/polyMesh/points
 
