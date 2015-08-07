@@ -18,9 +18,7 @@ plotBoundaryDots false;
 
 FieldsToPlot
 (
-    [Tf rawValues -0.1 1.0 0.1 "$GMTU/colours/white_blue_red.cpt"]
-//    [thetaf_diff contours -0.005 -0.5e-3 0.5e-3 "black,3_3:0"]
-//    [thetaf_diff contours 0.5e-3 0.005 0.5e-3 "black"]
+    [Tf rawValues -1.0 1.0 0.1 "$GMTU/colours/red_white_blue.cpt"]
 );
 
 region "-75e3/75e3/0e3/20e3";

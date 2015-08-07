@@ -8,6 +8,8 @@ FoamFile {
 
 interpolationSchemes {
     default         none;
+//    interpolate(grad(Tf)) midPoint;
+//    interpolate(grad(Tf)) cubicUpwindCPCFit phi 3;
     interpolate(grad(Tf)) upwind phi;
 }
 
@@ -17,15 +19,14 @@ divSchemes {
 
 gradSchemes {
     default         none;
-    default         Gauss upwind phi;
 }
 
 laplacianSchemes {
-    default         Gauss linear corrected;
+    default         none;
 }
 
 ddtSchemes {
-    default         backward;
+    default         none;
 }
 
 fluxRequired {
