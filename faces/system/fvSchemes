@@ -8,9 +8,10 @@ FoamFile {
 
 interpolationSchemes {
     default         none;
-//    interpolate(grad(Tf)) midPoint;
+    interpolate(grad(Tf)) midPoint;
+    interpolate(grad(Tf_0)) midPoint;
+    T_from_b cubicUpwindCPCFit phi 3;
 //    interpolate(grad(Tf)) cubicUpwindCPCFit phi 3;
-    interpolate(grad(Tf)) upwind phi;
 }
 
 divSchemes {
